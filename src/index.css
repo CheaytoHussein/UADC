@@ -1,0 +1,195 @@
+/*  ================================================================================================================ 
+    ==============================================Document Styling==================================================
+    ================================================================================================================ */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  overflow-y: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+/*  ================================================================================================================ 
+    ==============================================Mobile NavBar Styling=============================================
+    ================================================================================================================ */
+.Mobile-Nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: rgb(12, 45, 72);
+  display: flex;
+  flex-direction: column;
+  transition: 0.4s;
+  color: rgb(46, 139, 192);
+}
+
+.horizontal-elements-nav {
+  height: 10vh;
+  padding-left: 10vw;
+  padding-right: 5vw;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-arrow {
+  height: 5vh;
+  aspect-ratio: 1/1;
+  transition: 0.6s;
+  cursor: pointer;
+}
+.nav-list {
+  list-style: none;
+}
+.nav-list > li {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 140%;
+  animation: op 0.8s;
+  animation-fill-mode: forwards;
+}
+@keyframes op {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.mobile-nav-buttons {
+  color: rgb(46, 139, 192);
+  height: 6vh;
+  width: 50vw;
+  font-size: 160%;
+  background-color: transparent;
+  border: 1px transparent;
+  border-radius: 24px;
+  transition: 0.3s;
+}
+/*  ================================================================================================================ 
+    ==============================================Desktop NavBar Styling============================================
+    ================================================================================================================ */
+
+.Desktop-Nav {
+  background-color: rgb(12, 45, 72);
+  box-shadow: 0px 0px 2px 2px rgba(22, 88, 138, 0.555);
+  width: 100%;
+  height: 10vh;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: rgb(46, 139, 192);
+}
+.desktop-nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.desktop-nav-list > li {
+  padding-left: 12%;
+  position: relative;
+}
+/* old color if u wanna reuse it rgb(46, 139, 192) */
+.desktop-nav-buttons {
+  color: rgb(36, 108, 150);
+  height: 6vh;
+  width: 10vw;
+  font-size: 120%;
+  background-color: transparent;
+  border: 1px transparent;
+  border-radius: 24px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.desktop-nav-buttons:hover {
+  text-decoration: underline;
+}
+/*  ================================================================================================================ 
+    =====================================Desktop and Mobile Home Page Styling=======================================
+    ================================================================================================================ */
+.Desktop-Home {
+  z-index: -1;
+  margin-top: 10vh;
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.Desktop-Welcome {
+  width: 40vw;
+  height: 50%;
+  background-color: rgba(177, 212, 224, 0.671);
+  border: 1px transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 24px;
+  margin-left: 10vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Desktop-Welcome > h3 {
+  width: 70%;
+}
+.Desktop-Welcome > p {
+  width: 55%;
+}
+.Mobile-Welcome {
+  width: 70vw;
+  height: 70%;
+  background-color: rgba(177, 212, 224, 0.671);
+  border: 1px transparent;
+  border-radius: 24px;
+  margin-left: 10vw;
+  position: absolute;
+  left: 40%;
+  transform: translateX(-50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  box-shadow: 0px -3px 0px 0px rgb(108, 148, 161) inset;
+-webkit-box-shadow: 0px -3px 0px 0px rgb(108, 148, 161) inset;
+-moz-box-shadow: 0px -3px 0px 0px rgb(108, 148, 161) inset;
+}
+.Mobile-Welcome > h3 {
+  width: 50vw;
+  line-height: 200%;
+}
+.Mobile-Welcome > p {
+  width: 50vw;
+  line-height: 200%;
+  font-size: 120%;
+}
+.Mobile-Home {
+  z-index: -1;
+  margin-top: 10vh;
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
