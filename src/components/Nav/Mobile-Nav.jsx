@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import arrow from "../../assets/arrow.svg";
-const MobileNav = () => {
+const MobileNav = (props) => {
   const [clickedArrow, setClickedArrow] = useState(false);
-  const [mobileNavElement, setMobileNavElement] = useState("Home");
   const mobileNavListNames = ["Home", "Mission", "Plan", "Members"];
   return (
     <div
@@ -25,7 +24,7 @@ const MobileNav = () => {
       {clickedArrow && (
         <ul className="nav-list">
           {mobileNavListNames.map((element, idx) => {
-            document.title = `UADC-${mobileNavElement}`;
+            document.title = `UADC-${props.currentComponent}`;
             return (
               <li
                 className="mobile-nav-links"
@@ -36,12 +35,12 @@ const MobileNav = () => {
                   className="mobile-nav-buttons"
                   style={{
                     backgroundColor:
-                      mobileNavElement == element
+                      props.currentComponent == element
                         ? "rgb(177, 212, 224)"
                         : "rgb(12, 45, 72)",
                   }}
                   onClick={() => {
-                    setMobileNavElement(element);
+                    props.changeComponent(element);
                     setTimeout(() => setClickedArrow(false), 100);
                     //changing components and closing the navbar
                   }}

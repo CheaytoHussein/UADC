@@ -72,8 +72,8 @@ code {
 }
 .mobile-nav-buttons {
   color: rgb(46, 139, 192);
-  height: 6vh;
-  width: 50vw;
+  height: 8vh;
+  width: 60vw;
   font-size: 160%;
   background-color: transparent;
   border: 1px transparent;
@@ -171,8 +171,8 @@ code {
   align-items: center;
   overflow-y: scroll;
   box-shadow: 0px -3px 0px 0px rgb(108, 148, 161) inset;
--webkit-box-shadow: 0px -3px 0px 0px rgb(108, 148, 161) inset;
--moz-box-shadow: 0px -3px 0px 0px rgb(108, 148, 161) inset;
+  -webkit-box-shadow: 0px -3px 0px 0px rgb(108, 148, 161) inset;
+  -moz-box-shadow: 0px -3px 0px 0px rgb(108, 148, 161) inset;
 }
 .Mobile-Welcome > h3 {
   width: 50vw;
