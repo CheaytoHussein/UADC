@@ -10,14 +10,14 @@ const DesktopNav = (props) => {
       <span style={{ width: "15%" }}></span>
       <ul className="desktop-nav-list">
         {navListNames.map((element, idx) => {
-          document.title = `UADC-${props.currentComponent}`;
+          document.title = `UADC - ${props.currentComponent}`;
           return (
             <li className="desktop-nav-links" key={idx}>
               <button
                 className="desktop-nav-buttons"
                 style={{
                   backgroundColor:
-                  props.currentComponent == element
+                    props.currentComponent == element
                       ? "rgba(177, 212, 224, 0.671) "
                       : "rgb(12, 45, 72)",
                 }}

@@ -24,7 +24,7 @@ const MobileNav = (props) => {
       {clickedArrow && (
         <ul className="nav-list">
           {mobileNavListNames.map((element, idx) => {
-            document.title = `UADC-${props.currentComponent}`;
+            document.title = `UADC - ${props.currentComponent}`;
             return (
               <li
                 className="mobile-nav-links"
