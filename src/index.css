@@ -151,9 +151,14 @@ code {
 }
 .Desktop-Welcome > h3 {
   width: 70%;
+  color: rgb(20, 50, 66);
 }
 .Desktop-Welcome > p {
   width: 55%;
+  color: rgb(25, 68, 92);
+  border-left: 6px solid rgb(20, 50, 66);
+  box-sizing: content-box;
+  padding-left: 2vw;
 }
 .Mobile-Welcome {
   width: 70vw;
@@ -177,11 +182,13 @@ code {
 .Mobile-Welcome > h3 {
   width: 50vw;
   line-height: 200%;
+  color: rgb(20, 50, 66);
 }
 .Mobile-Welcome > p {
   width: 50vw;
   line-height: 200%;
   font-size: 120%;
+  color: rgb(25, 68, 92);
 }
 .Mobile-Home {
   z-index: -1;
@@ -193,3 +200,6 @@ code {
   display: flex;
   align-items: center;
 }
+/*  ================================================================================================================ 
+    =====================================Desktop and Mobile Home Page Styling=======================================
+    ================================================================================================================ */
