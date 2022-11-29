@@ -4,7 +4,7 @@ const MobileNav = (props) => {
   const [clickedArrow, setClickedArrow] = useState(false);
   const mobileNavListNames = ["Home", "Mission", "Plan", "Members"];
   return (
-    <div
+    <nav
       className="Mobile-Nav"
       style={{ height: `${clickedArrow ? 100 : 10}vh` }}
     >
@@ -25,6 +25,7 @@ const MobileNav = (props) => {
         <ul className="nav-list">
           {mobileNavListNames.map((element, idx) => {
             document.title = `UADC - ${props.currentComponent}`;
+            //Rendering the list when onclick
             return (
               <li
                 className="mobile-nav-links"
@@ -52,8 +53,7 @@ const MobileNav = (props) => {
           })}
         </ul>
       )}
-      {/* Rendering the list when the onclick */}
-    </div>
+    </nav>
   );
 };
 

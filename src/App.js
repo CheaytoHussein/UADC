@@ -12,7 +12,6 @@ const App = () => {
   const checkWidth = () =>
     window.innerWidth < 860 ? setIsMobile(true) : setIsMobile(false);
   window.addEventListener("resize", checkWidth);
-
   return (
     <>
       <Nav

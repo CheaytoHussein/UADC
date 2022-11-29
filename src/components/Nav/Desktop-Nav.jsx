@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const DesktopNav = (props) => {
   const navListNames = ["Home", "Mission", "Plan", "Members"];
   return (
-    <div className="Desktop-Nav">
+    <nav className="Desktop-Nav">
       <h2 id="title" style={{ paddingLeft: "8%" }}>
         &lt;UADC/&gt;
       </h2>
@@ -31,7 +31,7 @@ const DesktopNav = (props) => {
           );
         })}
       </ul>
-    </div>
+    </nav>
   );
 };
 

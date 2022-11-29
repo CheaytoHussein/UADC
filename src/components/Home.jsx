@@ -2,8 +2,9 @@ import React from "react";
 import DesktopPic from "../assets/bg-chip.jpg";
 import MobilePic from "../assets/bg-chip-beltoul.jpg";
 const Home = (props) => {
+  document.body.style.overflowY = "hidden";
   return (
-    <div
+    <section
       className={props.isMobile ? "Mobile-Home" : "Desktop-Home"}
       style={{
         backgroundImage: props.isMobile
@@ -21,7 +22,7 @@ const Home = (props) => {
           I can practice using React lol
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 
