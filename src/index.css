@@ -14,7 +14,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -125,7 +124,7 @@ code {
 /*  ================================================================================================================ 
     =====================================Desktop and Mobile Home Page Styling=======================================
     ================================================================================================================ */
-.Desktop-Home {
+.Home-container {
   z-index: -1;
   margin-top: 10vh;
   height: 90vh;
@@ -135,7 +134,7 @@ code {
   display: flex;
   align-items: center;
 }
-.Desktop-Welcome {
+.Welcome-container {
   width: 40vw;
   height: 50%;
   background-color: rgba(177, 212, 224, 0.671);
@@ -150,59 +149,46 @@ code {
   align-items: center;
   overflow-y: hidden;
 }
-.Desktop-Welcome > h3 {
+.Welcome-container > h3 {
   width: 70%;
   color: rgb(20, 50, 66);
 }
-.Desktop-Welcome > p {
-  width: 55%;
+.Welcome-container > p {
+  font-size: 2vw;
+  width: 80%;
   color: rgb(25, 68, 92);
   border-left: 6px solid rgb(20, 50, 66);
   padding-left: 2vw;
 }
-.Mobile-Welcome {
-  width: 70vw;
-  height: 70%;
-  background-color: rgba(177, 212, 224, 0.671);
-  border: 1px transparent;
-  border-radius: 24px;
-  margin-left: 10vw;
-  position: absolute;
-  left: 40%;
-  overflow-y: hidden;
-  transform: translateX(-50%);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow-y: scroll;
-  box-shadow: 0px -3px 0px 0px rgb(108, 148, 161) inset;
-  -webkit-box-shadow: 0px -3px 0px 0px rgb(108, 148, 161) inset;
-  -moz-box-shadow: 0px -3px 0px 0px rgb(108, 148, 161) inset;
+@media (min-width : 1056px){
+  .Welcome-container > p{font-size: 1.8vw;}
 }
-.Mobile-Welcome::-webkit-scrollbar {
-  display: none;
-}
-.Mobile-Welcome > h3 {
-  width: 50vw;
-  line-height: 200%;
-  color: rgb(20, 50, 66);
-}
-.Mobile-Welcome > p {
-  width: 50vw;
-  line-height: 200%;
-  font-size: 120%;
-  color: rgb(25, 68, 92);
-}
-.Mobile-Home {
-  z-index: -1;
-  margin-top: 10vh;
-  height: 90vh;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
+@media (max-width : 860px) {
+  .Welcome-container {
+    width: 70vw;
+    height: 70%;
+    position: absolute;
+    left: 40%;
+    transform: translateX(-50%);
+    overflow-y: scroll;
+    box-shadow: 0px -3px 0px 0px rgb(108, 148, 161) inset;
+    -webkit-box-shadow: 0px -3px 0px 0px rgb(108, 148, 161) inset;
+    -moz-box-shadow: 0px -3px 0px 0px rgb(108, 148, 161) inset;
+  }
+  .Welcome-container::-webkit-scrollbar {
+    display: none;
+  }
+  .Welcome-container > h3 {
+    font-size: 6vw;
+    width: 50vw;
+    line-height: 200%;
+  }
+  .Welcome-container > p {
+    font-size: 6vw;
+    width: 50vw;
+    line-height: 200%;
+    padding-left: 1vw;
+  }
 }
 /*  ================================================================================================================ 
     =====================================Desktop and Mobile Mission Page Styling====================================

@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-document.title="UADC"
+document.title = "UADC";
 root.render(
   <React.StrictMode>
     <App />
